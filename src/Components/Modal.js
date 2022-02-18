@@ -1,6 +1,6 @@
 import './Modal.css';
 import {useState} from "react";
-import popUp from "./PopUp";
+import PopUp from "./PopUp";
 import BackDrop from "./BackDrop";
 
 const Modal = () => {
@@ -19,7 +19,7 @@ const Modal = () => {
           <div>
               <button className='btn' onClick={openModal}>Show popup</button>
           </div>
-          {modal && (<popUp onCancel={closeHandler} onConfirm={closeHandler} />)}
+          {modal && (<PopUp onCancel={closeHandler} onConfirm={closeHandler} />)}
           {modal && (<BackDrop onCancel={closeHandler}/>)}
       </div>
   )

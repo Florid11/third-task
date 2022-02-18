@@ -24,12 +24,12 @@
     height: 51px;
 }
 
-.popup {
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+.popup{
+    position: fixed;
+    width: 50%;
+    height: 80vh;
     background-color: white;
+    z-index: 10;
 }
 
 .backdrop {

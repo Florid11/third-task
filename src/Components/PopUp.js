@@ -1,4 +1,4 @@
-const popUp = (props) => {
+const PopUp = (props) => {
     const cancelBtn = () => {
         props.onCancel();
     }
@@ -16,4 +16,4 @@ const popUp = (props) => {
   )
 }
 
-export default popUp;
+export default PopUp;
