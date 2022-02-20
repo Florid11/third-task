@@ -30,6 +30,7 @@
     height: 80vh;
     background-color: white;
     z-index: 10;
+    border-radius: 10px;
 }
 
 .backdrop {
@@ -41,3 +42,98 @@
     top: 0;
     left: 0;
 }
+
+.presp{
+    width: 49%;
+    float: left;
+    margin: 1% 0 0  1%;
+}
+
+.presp h3{
+    margin-bottom: 4rem;
+}
+
+.presp h4{
+    margin-top: 3rem;
+    border-bottom: 1px solid lightgray;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.buttons{
+    width: 48.5%;
+    float: right;
+    margin: 1% 1% 0 0;
+    padding-top: 75px;
+}
+
+.themeBtn {
+    display: inline-block;
+    color: #1DA1F2;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+    margin: -70px 16px 0 0;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.themeBtn:hover{
+    color: white;
+    background-color: #1DA1F2;
+}
+
+.buttons p{
+    margin-bottom: 28px;
+    float: right;
+}
+
+.btnBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    justify-content:flex-end;
+}
+
+.btn-p{
+    display: inline-block;
+    padding: 10px;
+    width: 6rem;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 2px;
+    margin-right: 3rem;
+}
+
+.btnCancel{
+    border-color: grey;
+    background-color: white;
+    color: grey;
+}
+
+.btnCancel:hover{
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnSave{
+    border-color: dodgerblue;
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.btnSave:hover{
+    background-color: steelblue;
+    cursor: pointer;
+    border: none;
+}
+
+
+
