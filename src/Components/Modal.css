@@ -101,7 +101,7 @@
     display: inline-block;
     width: 30px;
     outline: none;
-    border: none;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -141,21 +141,23 @@
 }
 
 .btnSave{
-    border-color: dodgerblue;
-    background-color: #1DA1F2;
+    border-color: #2072EF;
+    background-color: #2072EF;
     color: white;
 }
 
 .btnSave:hover{
-    background-color: steelblue;
+    background-color: #0053D1;
     cursor: pointer;
     border: none;
 }
 
 span{
     position:absolute;
-    top: 35%;
-    left: 50%;
+    top: 25%;
+    left: 35%;
+    z-index: 100;
+
 }
 
 
