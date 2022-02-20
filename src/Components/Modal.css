@@ -88,8 +88,25 @@
 }
 
 .buttons p{
-    margin-bottom: 28px;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-bottom: 1px solid lightgray;
+    margin: 36.5px 0 56px 0;
+    font-size: 18px;
+}
+
+.pick{
+    margin-left: 20px;
+    display: inline-block;
+    width: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.pick:hover{
+    cursor: pointer;
 }
 
 .btnBox{
@@ -133,6 +150,12 @@
     background-color: steelblue;
     cursor: pointer;
     border: none;
+}
+
+span{
+    position:absolute;
+    top: 35%;
+    left: 50%;
 }
 
 
