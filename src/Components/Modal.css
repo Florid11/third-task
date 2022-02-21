@@ -26,6 +26,7 @@
 
 .popup{
     position: fixed;
+    display: block;
     width: 50%;
     min-height: 80vh;
     overflow-y: auto;
@@ -45,6 +46,7 @@
 }
 
 .presp{
+    display: block;
     width: 98%;
     float: left;
     margin: 1% 0 0  1%;
