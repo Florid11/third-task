@@ -1,5 +1,5 @@
-import { ChromePicker } from 'react-color';
 import {useState} from "react";
+import { ChromePicker } from 'react-color';
 
 const PopUp = (props) => {
 
@@ -24,8 +24,9 @@ const PopUp = (props) => {
 
   return(
       <div className='popup' style={{backgroundColor: color2}}>
+
           <div className='presp'  style={{color: color1}}>
-              <div>
+              <div className='title'>
                   <h3>Theme Color</h3>
                   <button className='themeBtn'>Change Theme</button>
               </div>
@@ -35,7 +36,7 @@ const PopUp = (props) => {
               </div>
               <div>
                   <h4>Background Color</h4>
-                  <p>{color2}<button onClick={() => setShowColor2(showColor2 => !showColor2)} className='pick' style={{backgroundColor: color2}}/><span>{showColor2 && (<ChromePicker color={color2} onChange={(color2) => {setColor2(color2.hex)}}/>)}</span></p>
+                  <p>{color2}<button onClick={() => setShowColor2(showColor2 => !showColor2)} className='pick' style={{backgroundColor: color2}}/><span>{showColor2 && (<ChromePicker color={color2} onChange={(color2) => {setColor2(color2.hex)}} />)}</span></p>
               </div>
               <div>
                   <h4>Button Color</h4>

@@ -50,7 +50,7 @@
     margin: 1% 0 0  1%;
 }
 
-.presp div:first-child{
+.title{
     margin-bottom: 3rem;
 }
 
@@ -97,7 +97,7 @@
     height: 25px;
     outline: none;
     border-radius: 5px;
-    border: none;
+    border: 1px solid lightgray;
 }
 
 .pick:hover{
@@ -149,6 +149,8 @@
 
 span{
     position: fixed;
+    top: 25%;
+    left: 45%;
     z-index: 100;
 }
 
@@ -159,16 +161,64 @@ span{
         margin-left: 20%;
     }
 
-
+    span{
+        left: 40%;
+    }
 }
 
-@media all and (max-width: 686px){
-    .popup{
 
+@media all and (max-width: 914px){
+    .presp p{
+        width: 7rem;
+        border-bottom: none;
     }
 
-
+    span{
+        left: 0;
+    }
 }
 
+@media all and (max-width: 632px){
+    .presp{
+        align-items: center;
+    }
+
+    .presp h4{
+        border-bottom: none;
+    }
+
+    .presp p{
+        margin-top: -20px;
+        float: left;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .themeBtn{
+        float: left;
+        margin-top: -15px;
+    }
+
+    .btnCancel, .btnSave{
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    span{
+        right: 0;
+        left: unset;
+    }
+}
+
+@media all  and (max-width: 480px){
+    .btnCancel, .btnSave{
+        margin-bottom: 20px;
+        width: 25%;
+    }
+
+    span{
+        margin-top: 35px;
+        top: inherit;
+    }
+}
 
 
