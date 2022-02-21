@@ -26,8 +26,11 @@
 
 .popup{
     position: fixed;
+    display: flex;
+    flex-wrap: wrap;
     width: 50%;
-    height: 80vh;
+    min-height: 85vh;
+    overflow-y: auto;
     background-color: white;
     z-index: 10;
     border-radius: 10px;
@@ -62,9 +65,9 @@
 
 .buttons{
     width: 48.5%;
-    float: right;
     margin: 1% 1% 0 0;
     padding-top: 75px;
+    float: right;
 }
 
 .themeBtn {
@@ -91,9 +94,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    border-bottom: 1px solid lightgray;
-    margin: 36.5px 0 56px 0;
+    margin: 36.5px 0 56px 55%;
     font-size: 18px;
+    width: 8rem;
+    border-bottom: 1px solid lightgray;
 }
 
 .pick{
@@ -158,6 +162,29 @@ span{
     left: 35%;
     z-index: 100;
 
+}
+
+@media all and (max-width: 1230px){
+
+    .buttons p{
+        margin-left: 20%;
+    }
+
+    span{
+        left: 25%;
+    }
+}
+
+@media all and (max-width: 686px){
+    .popup{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span{
+        left: 15%;
+    }
 }
 
 
