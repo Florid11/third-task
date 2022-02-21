@@ -26,10 +26,8 @@
 
 .popup{
     position: fixed;
-    display: flex;
-    flex-wrap: wrap;
     width: 50%;
-    min-height: 85vh;
+    min-height: 80vh;
     overflow-y: auto;
     background-color: white;
     z-index: 10;
@@ -47,27 +45,29 @@
 }
 
 .presp{
-    width: 49%;
+    width: 98%;
     float: left;
     margin: 1% 0 0  1%;
 }
 
-.presp h3{
-    margin-bottom: 4rem;
+.presp div:first-child{
+    margin-bottom: 3rem;
 }
 
 .presp h4{
-    margin-top: 3rem;
     border-bottom: 1px solid lightgray;
-    font-weight: 300;
-    padding-bottom: 10px;
+    height: 2rem;
+    width: 60%;
+    float: left;
 }
 
-.buttons{
-    width: 48.5%;
-    margin: 1% 1% 0 0;
-    padding-top: 75px;
+.presp p{
+    width: 25%;
+    height: 2rem;
+    justify-content: center;
     float: right;
+    text-align: right;
+    border-bottom: 1px solid lightgray;
 }
 
 .themeBtn {
@@ -77,7 +77,7 @@
     background-color: transparent;
     cursor: pointer;
     float: right;
-    margin: -70px 16px 0 0;
+    margin: -50px 16px 0 0;
     font-size: 14px;
     padding: 10px;
     border-radius: 4px;
@@ -90,23 +90,14 @@
     background-color: #1DA1F2;
 }
 
-.buttons p{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin: 36.5px 0 56px 55%;
-    font-size: 18px;
-    width: 8rem;
-    border-bottom: 1px solid lightgray;
-}
-
 .pick{
     margin-left: 20px;
     display: inline-block;
     width: 30px;
+    height: 25px;
     outline: none;
-    border: 1px solid white;
     border-radius: 5px;
+    border: none;
 }
 
 .pick:hover{
@@ -157,12 +148,10 @@
 }
 
 span{
-    position:absolute;
-    top: 25%;
-    left: 35%;
+    position: fixed;
     z-index: 100;
-
 }
+
 
 @media all and (max-width: 1230px){
 
@@ -170,21 +159,15 @@ span{
         margin-left: 20%;
     }
 
-    span{
-        left: 25%;
-    }
+
 }
 
 @media all and (max-width: 686px){
     .popup{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
     }
 
-    span{
-        left: 15%;
-    }
+
 }
 
 
